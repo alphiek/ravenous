@@ -6,7 +6,7 @@ class Business extends React.Component {
     return (
     <div className="Business">
       <div className="image-container">
-        {this.props.business.imageSrc}
+        <img src={this.props.business.imageSrc} alt=''/>
       </div>
       <h2>{this.props.business.name}</h2>
       <div className="Business-information">
@@ -27,5 +27,3 @@ class Business extends React.Component {
 };
 
 export default Business;
-
-{/* This is the structure of the HTML to be rendered with the information from the BusinessList 'business attribute', which holds the business object information from app js. */}
