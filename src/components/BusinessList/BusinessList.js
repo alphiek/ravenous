@@ -8,9 +8,8 @@ class BusinessList extends React.Component {
     <div className="BusinessList">
     {
       this.props.businesses.map(business => {
-        let value = business + Math.floor(Math.random()*100).toString();
-        return <Business business={business}
-        key={value} />
+        return <Business business={this.business}
+        key={business.id} />
       })
     }
     </div>
